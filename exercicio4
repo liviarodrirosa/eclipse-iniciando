@@ -1,0 +1,27 @@
+package exercicio1;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int num_func, num_hs;
+		double valor_hr,sal;
+		
+		num_func = sc.nextInt();
+		num_hs = sc.nextInt();
+		valor_hr = sc.nextDouble();
+		sal = num_hs * valor_hr;
+			
+		System.out.println("numero= "+ num_func);
+		
+		System.out.printf("salario= %.2f%n", sal);
+
+		sc.close();
+	}
+
+}
