@@ -1,0 +1,37 @@
+package exercicio1;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		{
+		double a,b,c, areatrianguloretangulo, areacirculoraioc, areatrapezio, areaquadrado, arearetangulo;
+		double pi = 3.14159;
+		
+		a=sc.nextFloat();
+		b=sc.nextFloat();
+		c=sc.nextFloat();
+		
+	areatrianguloretangulo = a*c/2.0;
+	areacirculoraioc = pi*c*c;
+	areatrapezio = (a+b)/2*c;
+	areaquadrado = b*b;
+	arearetangulo = a*b;
+	
+	System.out.printf("area do triang3ulo retangulo = %.4f%n", areatrianguloretangulo);
+	System.out.printf("area do circulo de raio c = %.4f%n", areacirculoraioc);
+	System.out.printf("area do trapezio = %.4f%n", areatrapezio);
+	System.out.printf("area do quadrado = %.4f%n", areaquadrado);
+	System.out.printf("area do retangulo = %.4f%n", arearetangulo);
+		
+		
+		sc.close();
+		}
+	}}
+
+
