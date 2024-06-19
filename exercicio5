@@ -1,0 +1,35 @@
+package exercicio1;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int codPeca1, numPecas1,codPeca2, numPecas2;
+		double valorUnitPeca1, valorUnitPeca2, valor1, valor2, total;
+		
+		codPeca1 = sc.nextInt();
+		numPecas1 = sc.nextInt();
+		valorUnitPeca1 = sc.nextDouble();
+		codPeca2 = sc.nextInt();
+		numPecas2 = sc.nextInt();
+		valorUnitPeca2 = sc.nextDouble();
+		
+		valor1 = numPecas1*valorUnitPeca1;
+		valor2 = numPecas2*valorUnitPeca2;
+		total=valor1+valor2;
+			
+		
+		
+		System.out.printf("valor a ser pago peca 1= %.2f%n", valor1);
+		System.out.printf("valor a ser pago peca 2= %.2f%n", valor2);
+		System.out.println ("Valor total= "+total);
+
+		sc.close();
+	}
+
+}
