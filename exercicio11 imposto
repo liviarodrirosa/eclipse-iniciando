@@ -1,0 +1,36 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+
+		double sal = sc.nextDouble();
+		double imp;
+		
+		if (sal <=2000.00) {
+			imp = 0.0;
+			System.out.println("ISento");
+		} 
+		else if (sal <= 3000.00) {
+			imp = (sal - 2000.00) * 0.8;
+		}
+		else if (sal <= 4500.00) {
+			imp = (sal - 3000.00) * 0.18 + 1000.0 * 0.08;
+		}
+		else {
+			imp = (sal - 4500.00) * 0.28 + (1500.0 * 0.18) + (1000.0 * 0.08);
+		}
+		
+		System.out.printf("R$: %.2f%n", imp);
+		
+		
+		sc.close ();
+
+		
+	}
+}
